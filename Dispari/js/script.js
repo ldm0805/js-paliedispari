@@ -3,8 +3,8 @@ let button = document.getElementById('save_data');
 //3 Condizioni per il calcolo del prezzo del biglietto in base ai km ed all'età
 button.addEventListener('click', function(){
 
-    let user_choose= document.getElementById('choose_id').value;
-    let number_user= document.getElementById('number_id').value;
+    let user_choose = document.getElementById('choose_id').value;
+    let number_user = document.getElementById('number_id').value;
     
     number_user = number_user * 1;
    
@@ -28,19 +28,16 @@ button.addEventListener('click', function(){
     
     
     if(sum % 2 === 0 && user_choose === 'pari'){
-        alert('Hai vinto')
+        document.getElementById('result_game').innerHTML ='Hai vinto.'
     }
     
     else if(sum % 2 !== 0 && user_choose === 'dispari'){
-        alert('Hai vinto')
+        document.getElementById('result_game').innerHTML ='Hai vinto.'
     }
     
     else {
-        alert('Hai perso')
+        document.getElementById('result_game').innerHTML ='Hai perso.'
     }
-
-
-
 
 })
 

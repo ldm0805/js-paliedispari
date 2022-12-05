@@ -5,14 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Dispari</title>
 </head>
 <body>
-    <input id="choose_id" class="form-control" type="text" name="choose_user" placeholder="pari o dispari">
-    <input id="number_id" class="form-control" type="number" name="number_user" placeholder="numero">
-    <div class="d-flex justify-content-center">
-        <button id="save_data" class="btn btn-dark ">CLICCAMI</button>
+    <div class="container_log d-flex justify-content-center mt-5">
+
+        <div class="row w-50">
+            <div>
+                <h1></h1>
+            </div>
+            <div class="d-flex justify-content-center">
+                <h1>Gioca a pari a dispari contro il pc</h1>
+            </div>
+                <input id="choose_id" class="my-5 form-control text-center" type="text" name="choose_user" placeholder="Inserisci Pari o Dispari">
+                <input id="number_id" class="form-control text-center" type="number" name="number_user" placeholder="Inserisci un numero da 1 a 5">
+                <div class="d-flex justify-content-center">
+                    <button id="save_data" class="btn btn-info my-5">Cliccami</button>
+                </div>
+                <div class="title_win d-flex justify-content-center">
+                    <h1 id="result_game"></h1>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <span class="wave">🤜</span>
+                    <span class="wave">🤛</span>
+                </div>
+        </div>
     </div>
     <script type="text/javascript" src="./js/script.js"></script>
 </body>
