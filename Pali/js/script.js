@@ -13,8 +13,8 @@ let check_word = Palindrome(word_input)
 
 // Ciclo che controlla che la parola sia palindroma
 if(word_input == check_word){
-    console.log("si")
+    console.log("La parola è palindroma")
 }
 else{
-    console.log("no")
+    console.log("La parola non è palindroma")
 }
