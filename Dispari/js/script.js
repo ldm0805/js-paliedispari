@@ -4,10 +4,8 @@ let button = document.getElementById('save_data');
 button.addEventListener('click', function(){
 
     let user_choose = document.getElementById('choose_id').value;
-    let number_user = document.getElementById('number_id').value;
+    let number_user = parseInt(document.getElementById('number_id').value);
     
-    number_user = number_user * 1;
-   
     console.log(number_user)
     
     

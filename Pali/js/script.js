@@ -8,7 +8,7 @@ function Palindrome(word) {
 //Chiedere all'utente una parola e renderla in caratteri minuscoli
 const word_input = prompt("Inserisci una parola").toLowerCase();
 
-
+//Invochiamo la funzione
 let check_word = Palindrome(word_input)
 
 // Ciclo che controlla che la parola sia palindroma
